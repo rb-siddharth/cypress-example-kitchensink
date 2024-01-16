@@ -52,20 +52,20 @@ describe('RB Portal New user', function () {
     cy.get('button[type="submit"]').click();
 
     // Continue through additional steps
-    //cy.get('button[type="button"]:nth-child(3):contains("Continue")').click({ force: true });
+    cy.get('button[type="button"]:nth-child(3):contains("Continue")').click({ force: true });
 
-    //cy.contains('Continue').click();
+    cy.contains('Continue').click();
 
     // Select Business Type
-    //cy.get('svg[data-name="Limited Company"]').click();
-    //cy.contains('Next').click();
+    cy.get('svg[data-name="Limited Company"]').click();
+    cy.contains('Next').click();
 
     // Enter Business Name from fixture data
-    //cy.fixture('RBData').then((data) => {
-      //cy.get('input[type="text"]').eq(0).type(data.Business_Name);
-      //cy.contains(data.Business_Name).click(); // Assuming the correct option is visible
-    //});
+    cy.fixture('RBData').then((data) => {
+      cy.get('input[type="text"]').eq(0).type(data.Business_Name);
+      cy.contains(data.Business_Name).click(); // Assuming the correct option is visible
+    });
 
     // Continue with additional steps if needed
- // });
+  });
 });
