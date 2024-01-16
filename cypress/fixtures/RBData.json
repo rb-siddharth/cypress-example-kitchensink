@@ -1,5 +1,9 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+    "Loan_Purpose": "Aged debtors",
+    "Loan_Amount": "90000",
+    "Loan_Term": "54",
+    "First_Name" :"Automation",
+    "Last_Name": "RB",
+    "Email" : "rb-56@yopmail.com",
+    "Business_Name":"DHONI LIMITED"
 }
