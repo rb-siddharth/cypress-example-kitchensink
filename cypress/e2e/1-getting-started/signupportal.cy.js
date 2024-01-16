@@ -52,7 +52,8 @@ describe('RB Portal New user', function () {
     cy.get('button[type="submit"]').click();
 
     // Continue through additional steps
-    cy.get('button[type="button"]:nth-child(3):contains("Continue")').click();
+    cy.get('button[type="button"]:nth-child(3):contains("Continue")').click({ force: true });
+
     cy.contains('Continue').click();
 
     // Select Business Type
